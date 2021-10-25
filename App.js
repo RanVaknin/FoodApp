@@ -1,15 +1,18 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
-import HomeScreen from "./src/screens/HomeScreen";
+import SearchScreen from "./src/screens/SearchScreen";
+
+import { Asset } from "expo-asset";
+
 
 const navigator = createStackNavigator(
   {
-    Home: HomeScreen,
+    Search: SearchScreen,
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: "Search",
     defaultNavigationOptions: {
-      title: "App",
+      title: "business Search",
     },
   }
 );
